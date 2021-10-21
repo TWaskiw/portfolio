@@ -447,7 +447,7 @@ hr {
 
 .mySlides img {
   margin: auto;
-  width: 100%;
+  max-width: 75vw;
   max-height: 50vh;
 }
 

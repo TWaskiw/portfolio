@@ -168,6 +168,13 @@ anime({
 });
 
 anime({
+  targets: "#waskiw-color",
+  color: "#4F4F4F",
+  duration: 2000,
+  delay: 2500,
+});
+
+anime({
   targets: "#at",
   color: "#a5c6f9",
   duration: 2000,
