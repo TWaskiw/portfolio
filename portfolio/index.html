@@ -9,6 +9,9 @@
   <meta name="author" content="Thomas Waskiw Pedersen">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/491b6e8995.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -30,32 +33,33 @@
   <div class="first-page" id="first-page">
     <section class="first-page-sec generel-margin">
       <div>
-        <h1>Hello</h1>
+        <h1>Hello,</h1>
         <p>I’m Thomas Waskiw Pedersen,
-          a multimediadesigner based in Denmark, with focus
-          on frontend development and
-          UX/UI web-design. </p>
+          based in Denmark and currently studying multimediadesigner <span id="at">@</span> <span id="baa">Business
+            Academy Aarhus</span>. I'd love to show you to the <a href="#second-page"
+            id="focuspoint-color">focuspoints</a> I work with, and <a href="#third-page"
+            id="projects-color">projects</a> I
+          have
+          been a part of.</p>
       </div>
       <img src="img/profile.PNG">
     </section>
     <a href="#second-page">
       <div class="introduction-button">
         <p>let me introduce myself</p>
-        <div class="arrow">
-          <label class="fa fa-arrow-down fa"></label>
-        </div>
       </div>
     </a>
   </div>
 
   <!--Second page - focuspoints-->
   <div class="second-page" id="second-page">
-    <hr>
+    <hr class="blue-focuspoint">
     <div class="marquee">
       <div class="marquee-space">
-        <h2 class="marquee-content">Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints
+        <h2 class="marquee-content focus-color">Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints
+          Focuspoints
           Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints
-          Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints Focuspoints</h1>
+          Focuspoints</h1>
         </h2>
       </div>
     </div>
@@ -111,20 +115,19 @@
 
   <!--Third page - Projects-->
   <div class="third-page" id="third-page">
-    <hr>
+    <hr class="purple-projects">
     <div class="marquee">
       <div class="marquee-space">
-        <h2 class="marquee-content">Projects Projects Projects Projects Projects Projects Projects Projects Projects
-          Projects Projects Projects Projects Projects Projects
-          Projects Projects Projects Projects Projects Projects Projects Projects Thank you for visiting my site!
-          Projects Projects Projects
-          Projects Projects Projects Projects Projects Projects Projects
+        <h2 class="marquee-content projects-h2-color">Projects Projects Projects Projects Projects Projects Projects
+          Projects Projects Projects Projects Projects Projects Projects Projects
+          Projects Projects Projects Projects Projects Projects Thank you for visiting my site!
+
           </h1>
         </h2>
       </div>
     </div>
     <div class="projects generel-margin">
-      <article class="project" id="modalBtn">
+      <article class="project" id="modalBtn01">
         <h2><span class="blue-header">01. </span>Kildehunden</h2>
         <p>Development & Design</p>
         <figure class="projects-img img-blue">
@@ -150,7 +153,7 @@
             <div class="modal-upper-text">
               <h2 class="blue-header">Kennel Kildehundens wish</h2>
               <p>To get a new modern website that could unload
-                her from the many questions customers have.
+                them from the many questions customers have.
                 Move a lot of the customers interaction onto the website,
                 from her phone and mail - so they only receive the most
                 serious and import messages. </p>
@@ -163,37 +166,108 @@
                 Easy-to-use navigation throughout one-page <br>
                 Focus on UX and UI</p>
             </div>
-            <button class="close">Close</button>
+            <p class="blue-header">check it out: <a href="https://sigurdmazanti.dk/kildehunden/" target="_blank"
+                class="blue-header">sigurdmazanti.dk/kildehunden</a></p>
+            <button class="close" id="modalClose01">Close</button>
           </div>
-          <div class="modal-slideshow">
-
-            <div class="mySlides fade">
-              <img src="./img/mixfever.png">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./img/profile.PNG">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./img/kildehunden.png">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <br>
+          <div class="modal-slideshow" id="modalSlideshow01">
           </div>
         </div>
       </div>
 
-      <article class="project" id="modalBtn">
+      <article class="project" id="modalBtn02">
         <h2><span class="blue-header">02. </span>Mixfever web-app</h2>
         <p>Development & Design</p>
         <figure class="projects-img img-grey">
           <img src="./img/mixfever.png">
         </figure>
       </article>
+
+      <div id="modal02" class="modal">
+        <div class="marquee marquee-modal">
+          <div class="marquee-space">
+            <h2 class="marquee-content">
+              <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.</span>Mixfever
+              <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.
+              </span>Mixfever <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.</span>Mixfever
+              <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.
+              </span>Mixfever <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.</span>Mixfever
+              <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.
+              </span>Mixfever <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.</span>Mixfever
+              <span class="blue-header">02.</span>Mixfever <span class="blue-header">02.
+              </span>Mixfever
+            </h2>
+          </div>
+        </div>
+        <div class="modal-main-content">
+          <div class="modal-text">
+            <div class="modal-upper-text">
+              <h2 class="blue-header">Our users wish</h2>
+              <p>Be albe to lookup drinks by keywords and ingredi-
+                ense they have at hand. Also scroll through a
+                discover section, to find new exciting drinks. On the
+                products site, we also wanted to give our users
+                as much help as possible with making the drink.</p>
+            </div>
+            <div class="modal-lower-text">
+              <h2 class="blue-header">Soulution</h2>
+              <p>Modern design<br>
+                Responsive webapp<br>
+                Search-engine (colored ingredienses CTA buttons)<br>
+                Cards-designed discover section
+              </p>
+              <p class="blue-header">check it out: <a href="http://waskiw.com/mixfever/" target="_blank"
+                  class="blue-header">waskiw.com/mixfever</a></p>
+            </div>
+            <button class="close" id="modalClose02">Close</button>
+          </div>
+          <div class="modal-slideshow" id="modalSlideshow02">
+          </div>
+        </div>
+      </div>
+
+
+      <article class="project" id="modalBtn03">
+        <h2><span class="blue-header">03. </span>Lundsbjerggaard</h2>
+        <p>Development & Design</p>
+        <figure class="projects-img img-orange">
+          <img src="./img/lundsbjerggaard-mobile-frontpage.png">
+        </figure>
+      </article>
+
+      <div id="modal03" class="modal">
+        <div class="marquee marquee-modal">
+          <div class="marquee-space">
+            <h2 class="marquee-content">
+              <span class="blue-header">03.</span>Lundsbjerggaard <span class="blue-header">03.</span>Lundsbjerggaard
+              <span class="blue-header">03.</span>Lundsbjerggaard <span class="blue-header">03.
+              </span>Lundsbjerggaard <span class="blue-header">03.</span>Lundsbjerggaard <span
+                class="blue-header">03.</span>Kennel
+              Kildehunden <span class="blue-header">03.</span>Lundsbjerggaard <span class="blue-header">03.
+              </span>Lundsbjerggaard
+            </h2>
+          </div>
+        </div>
+        <div class="modal-main-content">
+          <div class="modal-text">
+            <div class="modal-upper-text">
+              <h2 class="blue-header">Lundsbjerggards’s wish</h2>
+              <p>Website to display what they sell in their store, and a place to always refer new customers to.</p>
+            </div>
+            <div class="modal-lower-text">
+              <h2 class="blue-header">Soulution</h2>
+              <p>Lots of focus on the UI of the “menu”<br>
+                Scroll-bar menu, with indicator to always tell the user where they are<br>
+                Responsive website <br>
+              </p>
+              <p class="blue-header">page under development</p>
+            </div>
+            <button class="close" id="modalClose03">Close</button>
+          </div>
+          <div class="modal-slideshow" id="modalSlideshow03">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -206,15 +280,19 @@
         <h2 class="marquee-content">Contact Contact Contact Contact Contact Contact Contact Contact Contact
           Contact Contact Contact Contact Contact Contact
           Contact Contact Contact Contact Contact Contact Contact Contact Contact Contact Contact Contact
-          Contact Contact Contact Contact Contact Contact Contact Contact
           </h1>
         </h2>
       </div>
     </div>
     <div class="contact generel-margin">
       <article>
-        <h2>Say hi!</h2>
-        <p>sjdfghsdjfh</p>
+        <h2>Got a <span class="project-color">project</span>, or just wanna grab a cup of <span
+            id="coffee">coffee</span>?
+          <span style="color: #2d81ff;">Say hi! </span>
+        </h2>
+        <p>Let's
+          get in
+          touch, and make something amazing happen!</p>
       </article>
       <div class="contact-form">
         <form>
@@ -233,7 +311,7 @@
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Hello.." style="height:200px"></textarea>
 
-          <input type="submit" value="Send">
+          <input type="submit" value="Get in touch">
 
         </form>
       </div>
@@ -242,7 +320,7 @@
 
   <footer>
     <div class="left-footer">
-      <h2>Thank you for checking out my portfolio!</h2>
+      <p>Thank you for checking out my portfolio!</p>
     </div>
     <div class="right-footer">
       <a href="https://www.instagram.com/t.waskiw/" target="_blank" class="fab fa-instagram"></a>

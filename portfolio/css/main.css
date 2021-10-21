@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   overflow: scroll;
   padding: 0;
   margin: 0;
@@ -23,7 +23,7 @@ nav {
   top: 0px;
   transition: 0.5s;
   z-index: 555;
-  background-color: #f3f3f3;
+  background-color: #fafafa;
 }
 
 .nav-container {
@@ -108,7 +108,8 @@ p {
 
 p:hover {
   background-size: 100% 100%;
-  background-image: linear-gradient(yellow, yellow);
+  /*
+  background-image: linear-gradient(yellow, yellow); */
 }
 
 .focuspoint {
@@ -173,7 +174,33 @@ p:hover {
 
 /* Second page - Focuspoints */
 .second-page {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.focus-color {
+  color: #a5c6f9;
+  -webkit-text-stroke: 0.1px transparent;
+}
+
+.blue-focuspoint {
+  border: 1px solid #a5c6f9;
+}
+
+.projects-h2-color {
+  color: #6a5fb2;
+  -webkit-text-stroke: 0.1px transparent;
+}
+
+.purple-projects {
+  border: 1px solid #6a5fb2;
+}
+
+#coffee {
+  color: #8a624a;
+}
+
+.project-color {
+  color: #6a5fb2;
 }
 
 .second-page br {
@@ -185,7 +212,7 @@ p:hover {
   position: relative;
   width: 100vw;
   max-width: 100%;
-  height: 50px;
+  height: 90px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -197,15 +224,18 @@ p:hover {
   animation: marquee 35s linear infinite;
 }
 
+.marquee-space:hover {
+  animation-direction: reverse;
+}
+
 hr {
   margin: 8px 0vw 0 0vw;
 }
 
 .marquee-content {
-  font-size: 28px;
+  font-size: 62px;
   font-weight: 600;
   margin: 0;
-  -webkit-text-stroke: 0.1px black;
 }
 
 .marquee-content:hover {
@@ -269,6 +299,7 @@ hr {
   display: flex;
   flex-direction: column;
   text-align: center;
+  height: 100%;
 }
 
 .project h2 {
@@ -306,8 +337,11 @@ hr {
   background-color: #ededed;
 }
 
+.img-orange {
+  background-color: #ffe6d1;
+}
+
 .projects-img img {
-  height: 50%;
   max-width: 100%;
 }
 
@@ -378,12 +412,16 @@ hr {
   font-size: 0.9rem;
 }
 
-#modalBtn {
+#modalBtn01,
+#modalBtn02,
+#modalBtn03 {
   border: 1px dotted transparent;
 }
 
-#modalBtn:hover {
-  border: 1px dotted black;
+#modalBtn01:hover,
+#modalBtn02:hover,
+#modalBtn03:hover {
+  border: 1px dotted #6a5fb2;
   transition: 0.1s;
   cursor: pointer;
 }
@@ -409,6 +447,8 @@ hr {
 
 .mySlides img {
   margin: auto;
+  width: 100%;
+  max-height: 50vh;
 }
 
 /* Next & previous buttons */
@@ -572,10 +612,20 @@ footer {
     margin-top: 5vh;
   }
 
+  .projects-img img {
+    height: 25em;
+  }
+
   .projects {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    max-width: 1500px;
+  }
+
+  .projects-img img {
+    max-height: 450px;
+    width: auto;
   }
 
   .nav-container {
@@ -661,5 +711,20 @@ footer {
   .focuspoint {
     align-items: center;
     text-align: center;
+  }
+
+  /* Contact */
+  .contact {
+    flex-direction: row;
+  }
+
+  .contact article,
+  .contact-form {
+    width: 50%;
+  }
+
+  .contact article h2,
+  .contact article p {
+    font-size: 42px;
   }
 }
