@@ -20,7 +20,7 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: -125px;
   transition: 0.5s;
   z-index: 555;
   background-color: #fafafa;
