@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   overflow: scroll;
   padding: 0;
   margin: 0;
@@ -23,7 +23,7 @@ nav {
   top: 0px;
   transition: 0.5s;
   z-index: 555;
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
 }
 
 .nav-container {
@@ -154,10 +154,6 @@ p:hover {
   margin: 5% 0;
 }
 
-.arrowbounce {
-  animation: arrowbounce 2s infinite;
-}
-
 .fa-arrow-down,
 .introduction-button p,
 .first-page a {
@@ -173,24 +169,6 @@ p:hover {
 .fa-arrow-down {
   color: black;
   font-size: 12px;
-}
-
-@keyframes arrowbounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-15px);
-  }
-
-  60% {
-    transform: translateY(-10px);
-  }
 }
 
 /* Second page - Focuspoints */
@@ -547,7 +525,7 @@ input[type="submit"]:hover {
 
 /* Fourth page */
 .fourth-page {
-  height: 100vh;
+  min-height: 90vh;
 }
 
 /* Footer */
@@ -559,6 +537,19 @@ footer {
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   max-width: 1024px;
+}
+
+.right-footer a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  border: 1px dotted transparent;
+  padding: 10px 15px;
+}
+
+.right-footer a:hover {
+  border: 1px dotted black;
 }
 
 /* Media query */
