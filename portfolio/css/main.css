@@ -17,10 +17,14 @@ body {
 }
 
 /* Navigation */
-/*
 nav {
-  border-bottom: 1px solid black;
-} */
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: 0.5s;
+  z-index: 555;
+  background-color: #f5f5f5;
+}
 
 .nav-container {
   display: flex;
@@ -52,6 +56,15 @@ nav a {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 22px;
+  border: 1px solid transparent;
+}
+
+.nav-ul li a:hover {
+  border: 1px dotted black;
+}
+
+.nav-ul li {
+  margin: 0.5rem 0;
 }
 
 .burger {
@@ -100,14 +113,15 @@ p:hover {
 .focuspoint {
   align-items: center;
   text-align: center;
-  padding: 3vh 3vw 7vh 3vw;
+  padding: 3vh 3rem 7vh 3rem;
 }
 
 /* First page */
 .first-page {
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 89vh;
   justify-content: space-between;
   align-items: center;
 }
@@ -180,7 +194,7 @@ p:hover {
 
 /* Second page - Focuspoints */
 .second-page {
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
 }
 
 .second-page br {
@@ -235,6 +249,7 @@ hr {
   flex-direction: column;
   background-color: white;
   border-radius: 25px;
+  margin-top: 5vh;
 }
 
 .focuspoint-top-h2 {
@@ -268,6 +283,10 @@ hr {
 }
 
 /* Third page - Projects */
+.third-page {
+  min-height: 100vh;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -314,6 +333,157 @@ hr {
   max-width: 100%;
 }
 
+/* Third page - modals */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 556; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  background-color: #fefefe;
+  overflow: scroll;
+  transition: 2s;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  font-size: 16px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin: 5vh auto;
+  bottom: 5px;
+  display: block;
+  background: transparent;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px dotted black;
+}
+
+.modal-main-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.modal-text {
+  align-items: flex-start;
+  text-align: start;
+  width: 90%;
+  margin: auto;
+  max-width: 650px;
+}
+
+.modal-text h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.modal-text p {
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+
+#modalBtn {
+  border: 1px dotted transparent;
+}
+
+#modalBtn:hover {
+  border: 1px dotted black;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+/* Third page - slideshow */
+.modal-slideshow {
+  position: relative;
+  height: 40vh;
+  text-align: start;
+  display: flex;
+  margin: 5vh auto;
+  min-width: 90vw;
+  max-width: 650px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: auto;
+  margin: auto;
+  max-height: 50vh;
+}
+
+.mySlides img {
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  font-size: 18px;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.prev:hover,
+.next:hover {
+  border: 1px dotted black;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev {
+  left: 5px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*Fourth page*/
 .contact {
   display: flex;
@@ -349,8 +519,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #a5c6f9;
-  color: white;
+  border: 1px dotted black;
 }
 
 .contact-form {
@@ -376,7 +545,21 @@ input[type="submit"]:hover {
   width: 45%;
 }
 
+/* Fourth page */
+.fourth-page {
+  height: 100vh;
+}
+
 /* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  max-width: 1024px;
+}
 
 /* Media query */
 @media screen and (min-width: 500px) {
@@ -384,6 +567,10 @@ input[type="submit"]:hover {
     margin: auto;
     max-width: 68%;
     margin-top: 5vh;
+  }
+
+  .modal-slideshow {
+    min-width: 500px;
   }
 }
 
@@ -403,7 +590,7 @@ input[type="submit"]:hover {
   .nav-container {
     max-width: 1024px;
     margin: auto;
-    padding: 15px 0;
+    padding: 5px 15px;
   }
 
   .first-page-sec {
@@ -427,9 +614,40 @@ input[type="submit"]:hover {
     z-index: 1;
   }
 
+  /* Modal */
+  .modal-main-content {
+    flex-direction: row;
+    height: 90vh;
+    margin: 0 7.5vw;
+  }
+
+  .modal-slideshow {
+    margin: auto;
+  }
+
+  .close {
+    margin-left: 0;
+  }
+
+  .modal-text h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  .modal-text p {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .modal-text,
+  .modal-slideshow {
+    width: 50%;
+  }
+
   /* Focuspoints */
   .focuspoints {
     flex-direction: row;
+    margin-top: 10vh;
   }
 
   .focuspoint {
