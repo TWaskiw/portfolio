@@ -191,14 +191,14 @@ anime({
   targets: "#focuspoint-color",
   color: "#a5c6f9",
   duration: 2000,
-  delay: 3400,
+  delay: 3900,
 });
 
 anime({
   targets: "#projects-color",
   color: "#6a5fb2",
   duration: 2000,
-  delay: 4700,
+  delay: 4600,
 });
 
 anime({
