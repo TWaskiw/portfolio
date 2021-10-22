@@ -108,8 +108,6 @@ p {
 
 p:hover {
   background-size: 100% 100%;
-  /*
-  background-image: linear-gradient(yellow, yellow); */
 }
 
 .focuspoint {
@@ -120,7 +118,7 @@ p:hover {
 
 /* First page */
 .first-page {
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 5vh;
   display: flex;
   flex-direction: column;
@@ -139,6 +137,7 @@ p:hover {
 
 .first-page-sec p {
   margin-top: -10px;
+  -webkit-text-stroke: 0.1px #fafafa;
 }
 
 .first-page-sec img {
@@ -149,11 +148,16 @@ p:hover {
   min-width: 200px;
   width: 50%;
   max-width: 300px;
+  border-radius: 50%;
 }
 
 .introduction-button {
   text-align: center;
   margin: 5% 0;
+}
+
+.introduction-button p {
+  margin-top: 0;
 }
 
 .first-page a {
@@ -180,7 +184,7 @@ p:hover {
 
 .focus-color {
   color: #a5c6f9;
-  -webkit-text-stroke: 0.1px transparent;
+  -webkit-text-stroke: 0.1px #a5c6f9;
 }
 
 .blue-focuspoint {
@@ -189,7 +193,7 @@ p:hover {
 
 .projects-h2-color {
   color: #6a5fb2;
-  -webkit-text-stroke: 0.1px transparent;
+  -webkit-text-stroke: 0.1px #6a5fb2;
 }
 
 .purple-projects {
@@ -202,6 +206,11 @@ p:hover {
 
 .project-color {
   color: #6a5fb2;
+}
+
+.contact-h2-color {
+  color: black;
+  -webkit-text-stroke: 0.1px black;
 }
 
 .second-page br {
@@ -259,6 +268,7 @@ hr {
   flex-direction: column;
   background-color: white;
   margin: 7.5vh 10vw 13vh 10vw;
+  border-radius: 5px;
 }
 
 .focuspoint-top-h2 {
@@ -507,27 +517,21 @@ hr {
 .contact {
   display: flex;
   flex-direction: column;
+  padding-bottom: 0;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
 select,
+input[type="text"],
 textarea {
   width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
   border: 1px solid black;
-  /* Gray border */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
+  padding: 12px;
   margin-bottom: 16px;
   /* Bottom margin */
   resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
   border: 1px solid black;
   background-color: transparent;
@@ -536,7 +540,6 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   border: 1px dotted black;
 }
@@ -567,6 +570,10 @@ input[type="submit"]:hover {
 /* Fourth page */
 .fourth-page {
   min-height: 92vh;
+}
+
+.contact article {
+  padding: 20px;
 }
 
 /* Footer */
@@ -642,8 +649,9 @@ footer {
   }
 
   .first-page-sec p {
+    position: relative;
     font-size: 32px;
-    z-index: 2;
+    z-index: 999;
   }
 
   .first-page-sec img {
@@ -657,10 +665,14 @@ footer {
     z-index: 1;
   }
 
+  .first-page {
+    padding-top: 10vh;
+  }
+
   /* Modal */
   .modal-main-content {
     flex-direction: row;
-    height: 90vh;
+    height: 88vh;
     margin: 0 7.5vw;
   }
 
@@ -694,7 +706,7 @@ footer {
   /* Focuspoints */
   .focuspoints {
     flex-direction: row;
-    margin: 10vh auto auto auto;
+    margin: 10vh auto;
     max-width: 1024px;
   }
 
@@ -718,6 +730,7 @@ footer {
   /* Contact */
   .contact {
     flex-direction: row;
+    padding-bottom: 5vh;
   }
 
   .contact article,
@@ -728,6 +741,10 @@ footer {
   .contact article h2,
   .contact article p {
     font-size: 42px;
+  }
+
+  .contact article {
+    padding: 0;
   }
 
   footer {

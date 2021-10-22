@@ -164,42 +164,41 @@ anime({
   targets: ".first-page-sec h1",
   translateX: [-250, 0],
   duration: 1500,
-  fontWeight: 600,
 });
 
 anime({
   targets: "#waskiw-color",
   color: "#4F4F4F",
   duration: 2000,
-  delay: 2500,
+  delay: 1000,
 });
 
 anime({
   targets: "#at",
   color: "#a5c6f9",
   duration: 2000,
-  delay: 3500,
+  delay: 2200,
 });
 
 anime({
   targets: "#baa",
   color: "#7DA9AA",
   duration: 2000,
-  delay: 4200,
+  delay: 2600,
 });
 
 anime({
   targets: "#focuspoint-color",
   color: "#a5c6f9",
   duration: 2000,
-  delay: 5800,
+  delay: 3400,
 });
 
 anime({
   targets: "#projects-color",
   color: "#6a5fb2",
   duration: 2000,
-  delay: 7300,
+  delay: 4700,
 });
 
 anime({
@@ -207,6 +206,12 @@ anime({
   translateX: [-250, 0],
   easing: "easeInOutExpo",
   duration: 1500,
-  delay: 8000,
+  delay: 5000,
   color: ["#fafafa", "#000000"],
 });
+
+function inTouchAlert() {
+  alert(
+    "I'm really sorry, this does not seem to work right now. Please contact me through email, using the icon-link in the footer, thank you!"
+  );
+}
