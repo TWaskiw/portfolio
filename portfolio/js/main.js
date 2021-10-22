@@ -104,7 +104,7 @@ document.getElementById("modalBtn03").onclick = function () {
   </div>
 
   <div class="mySlides fade">
-    <img src="./img/lundsbjerggaard-desktop-frontpage.PNG">
+    <img src="./img/lundsbjerggaard-desktop-frontpage.png">
   </div>
 
   <div class="mySlides fade">
@@ -200,4 +200,13 @@ anime({
   color: "#6a5fb2",
   duration: 2000,
   delay: 7300,
+});
+
+anime({
+  targets: "#introduction-btn",
+  translateX: [-250, 0],
+  easing: "easeInOutExpo",
+  duration: 1500,
+  delay: 8000,
+  color: ["#fafafa", "#000000"],
 });

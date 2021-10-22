@@ -121,9 +121,10 @@ p:hover {
 /* First page */
 .first-page {
   padding-top: 10vh;
+  padding-bottom: 5vh;
   display: flex;
   flex-direction: column;
-  min-height: 89vh;
+  min-height: 84vh;
   justify-content: space-between;
   align-items: center;
 }
@@ -155,16 +156,16 @@ p:hover {
   margin: 5% 0;
 }
 
-.fa-arrow-down,
-.introduction-button p,
 .first-page a {
-  color: black;
   list-style-type: none;
   text-decoration: none;
+  color: black;
 }
 
-.introduction-button p {
-  font-size: 14px;
+#introduction-button {
+  color: #fafafa;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .fa-arrow-down {
@@ -565,18 +566,19 @@ input[type="submit"]:hover {
 
 /* Fourth page */
 .fourth-page {
-  min-height: 90vh;
+  min-height: 92vh;
 }
 
 /* Footer */
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: auto;
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   max-width: 1024px;
+  margin-bottom: 4vh;
 }
 
 .right-footer a {
@@ -726,5 +728,10 @@ footer {
   .contact article h2,
   .contact article p {
     font-size: 42px;
+  }
+
+  footer {
+    flex-direction: row;
+    margin-bottom: 0;
   }
 }
