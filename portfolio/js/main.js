@@ -216,13 +216,15 @@ anime({
   duration: 1600,
 });
 
-function contactSuccess(event) {
+submitButton.addEventListener("click", function (event) {
   event.preventDefault();
+});
+
+function contactSuccess(event) {
   const name = document.getElementById("fname");
   const email = document.getElementById("email");
   const message = document.getElementById("subject");
   if (name.value !== "" && email.value !== "" && subject.value !== "") {
-    event.preventDefault();
     document.getElementById("submitButton").innerHTML =
       "Success! Thank you for contacting me.";
   }
