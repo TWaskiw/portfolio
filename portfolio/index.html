@@ -327,7 +327,7 @@
         <p>Let's get in touch, and make something amazing happen!</p>
       </article>
       <div class="contact-form">
-        <form method="post" action="contact-handler.php">
+        <form method="post" action="contact-handler.php" id="contactForm">
           <div class="contact-name">
             <div class="first-name">
               <label for="fname">Name</label>
@@ -343,7 +343,8 @@
           <label for="subject">Message</label>
           <textarea id="subject" name="subject" placeholder="Hello.." style="height: 200px" required></textarea>
 
-          <input type="submit" onclick="contactSuccess()" value="Get in touch" id="submitButton" />
+          <input type="submit" onclick="contactSuccess()" value="Get in touch" id="submitButton"
+            onsubmit="return false" />
         </form>
       </div>
     </div>

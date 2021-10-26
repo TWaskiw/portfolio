@@ -225,9 +225,3 @@ function contactSuccess() {
       "Success! Thank you for contacting me.";
   }
 }
-
-var form = document.getElementById("contactForm");
-function handleForm(event) {
-  event.preventDefault();
-}
-form.addEventListener("submit", handleForm);
