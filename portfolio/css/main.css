@@ -615,6 +615,10 @@ footer {
     margin-top: 5vh;
   }
 
+  .web-design-p {
+    min-height: 100px;
+  }
+
   .projects-img img {
     height: 25em;
   }

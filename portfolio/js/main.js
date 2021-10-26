@@ -210,8 +210,14 @@ anime({
   color: ["#fafafa", "#000000"],
 });
 
+anime({
+  targets: "#profile-pictere-img",
+  translateX: [+250, 0],
+  duration: 1600,
+});
+
 function inTouchAlert() {
   alert(
-    "I'm really sorry, this does not seem to work right now. Please contact me through email, using the icon-link in the footer, thank you!"
+    "I'm sorry, this does not seem to work right now. Please contact me through email, using the icon-link in the footer, thank you!"
   );
 }
