@@ -221,9 +221,11 @@ function contactSuccess(event) {
   const email = document.getElementById("email");
   const message = document.getElementById("subject");
   if (name.value !== "" && email.value !== "" && subject.value !== "") {
-    alert("Thank you for contacting me!");
+    alert(
+      "Thank you for getting in touch! I will get back to you as fast as possible!"
+    );
     /*
     document.getElementById("submitButton").innerHTML =
-      "Success! Thank you for contacting me."; */
+      "Success! Thank you for contacting me!"; */
   }
 }

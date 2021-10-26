@@ -564,6 +564,8 @@ input[type="submit"]:hover {
 /* Fourth page */
 .fourth-page {
   min-height: 92vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact article {
