@@ -731,6 +731,7 @@ footer {
   .contact {
     flex-direction: row;
     padding-bottom: 5vh;
+    margin-top: auto;
   }
 
   .contact article,

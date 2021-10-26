@@ -222,7 +222,7 @@ function contactSuccess(event) {
   const message = document.getElementById("subject");
   if (name.value !== "" && email.value !== "" && subject.value !== "") {
     alert(
-      "Thank you for getting in touch! I will get back to you as fast as possible!"
+      "Thank you for getting in touch. I will get back to you as soon as possible!"
     );
     /*
     document.getElementById("submitButton").innerHTML =
