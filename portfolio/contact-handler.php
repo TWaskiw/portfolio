@@ -4,8 +4,8 @@
     $email = $_POST['email'];
     $subject = $_POST['subject'];
 
-    $email_from = 'thomaswwpedersen@gmail.com';
-    $email_subject = "New Form Submission";
+    $email_from = 'Portfolio';
+    $email_subject = "Ny besked";
     $email_body = "Fra: $firstname.\n". 
                   "Efternavn: $lastname.\n".
                   "Email: $email.\n".
@@ -13,7 +13,7 @@
 
                   $to = "thomaswpedersen@hotmail.com";
                   $headers = "From: $email_from \r\n";
-                  $headers .= "Reply-To: $visitor_email \r\n";
+                  $headers .= "Svar til: $visitor_email \r\n";
                   mail($to,$email_subject,$email_body,$headers);
 
                   header("Location: index.html");

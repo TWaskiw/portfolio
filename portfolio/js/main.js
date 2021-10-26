@@ -217,6 +217,7 @@ anime({
 });
 
 function contactSuccess(event) {
+  event.preventDefault();
   const name = document.getElementById("fname");
   const email = document.getElementById("email");
   const message = document.getElementById("subject");
