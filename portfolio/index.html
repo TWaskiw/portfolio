@@ -327,21 +327,21 @@
         <p>Let's get in touch, and make something amazing happen!</p>
       </article>
       <div class="contact-form">
-        <form action="contact-handler.php">
+        <form method="post" action="contact-handler.php">
           <div class="contact-name">
             <div class="first-name">
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="First name" />
+              <input type="text" id="fname" name="firstname" placeholder="First name" required />
             </div>
             <div class="last-name">
               <input type="text" id="lname" name="lastname" placeholder="Last name" />
             </div>
           </div>
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email" />
+          <input type="text" id="email" name="email" placeholder="Email" required />
 
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Hello.." style="height: 200px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Hello.." style="height: 200px" required></textarea>
 
           <input type="submit" onclick="inTouchAlert()" value="Get in touch" />
         </form>
