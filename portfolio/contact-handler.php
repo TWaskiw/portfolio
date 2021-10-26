@@ -6,10 +6,10 @@
 
     $email_from = 'thomaswwpedersen@gmail.com';
     $email_subject = "Ny portfolio besked";
-    $email_body = "Fra: $firstname: \n". 
-                  "Efternavn: $lastname: \n".
-                  "Email: $email: \n".
-                  "Besked: $subject: \n";
+    $email_body = "Fra: $firstname\n". 
+                  "Efternavn: $lastname\n".
+                  "Email: $email\n".
+                  "Besked: $subject\n";
 
                   $to = "thomaswpedersen@hotmail.com";
                   $headers = "From: $email_from \r\n";
