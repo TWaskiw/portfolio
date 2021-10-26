@@ -4,8 +4,8 @@
     $email = $_POST['email'];
     $subject = $_POST['subject'];
 
-    $email_from = 'thomaswwpedersen@hotmail.com';
-    $email_subject = "New Form Submission";
+    $email_from = 'thomaswwpedersen@gmail.com';
+    $email_subject = "Ny portfolio besked";
     $email_body = "Fra: $firstname.\n". 
                   "Efternavn: $lastname.\n".
                   "Email: $email.\n".
