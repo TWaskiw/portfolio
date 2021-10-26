@@ -216,16 +216,14 @@ anime({
   duration: 1600,
 });
 
-submitButton.addEventListener("click", function (event) {
-  event.preventDefault();
-});
-
 function contactSuccess(event) {
   const name = document.getElementById("fname");
   const email = document.getElementById("email");
   const message = document.getElementById("subject");
   if (name.value !== "" && email.value !== "" && subject.value !== "") {
+    alert("Thank you for contacting me!");
+    /*
     document.getElementById("submitButton").innerHTML =
-      "Success! Thank you for contacting me.";
+      "Success! Thank you for contacting me."; */
   }
 }
