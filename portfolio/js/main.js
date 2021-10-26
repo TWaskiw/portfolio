@@ -216,8 +216,12 @@ anime({
   duration: 1600,
 });
 
-function inTouchAlert() {
-  alert(
-    "I'm sorry, this does not seem to work right now. Please contact me through email, using the icon-link in the footer, thank you!"
-  );
+function contactSuccess() {
+  const name = document.getElementById("fname");
+  const email = document.getElementById("email");
+  const message = document.getElementById("subject");
+  if (name.value !== "" && email.value !== "" && subject.value !== "") {
+    document.getElementById("submitButton").innerHTML =
+      "Success! Thank you for contacting me.";
+  }
 }
