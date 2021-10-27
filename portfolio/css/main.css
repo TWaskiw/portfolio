@@ -584,6 +584,18 @@ footer {
   margin-bottom: 4vh;
 }
 
+.left-footer a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  border: 1px dotted transparent;
+}
+
+.left-footer a:hover {
+  border-bottom: 1px dotted black;
+}
+
 .right-footer a {
   list-style-type: none;
   text-decoration: none;
